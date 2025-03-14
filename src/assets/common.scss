@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+.main {
+  padding-top: $header-height;
+  background: url("/images/bg_content.gif");
+}
+
+.sub-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  > ul {
+    display: flex;
+    justify-content: center;
+    li {
+      padding-left: 24px;
+      margin-left: 24px;
+      line-height: 60px;
+      position: relative;
+      &.active {
+        a {
+          color: $main-color;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        background-color: #ddd;
+        border-radius: 50%;
+      }
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
+        &::after {
+          display: none;
+        }
+      }
+      a {
+        font-weight: 700;
+        color: $font-color-white;
+      }
+    }
+  }
+}

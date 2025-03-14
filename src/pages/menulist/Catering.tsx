@@ -1,0 +1,11 @@
+import SubHeader from "@/components/SubHeader";
+
+const Catering = () => {
+  return (
+    <div className="catering-page">
+      <SubHeader category="메뉴소개" activeColor="#ffce32" />
+    </div>
+  );
+};
+
+export default Catering;

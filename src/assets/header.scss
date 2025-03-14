@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: $header-height;
+  max-height: $header-height;
+  padding-bottom: 24px;
+  background-color: #fff;
+  border-top: 5px solid;
+  border-color: $main-color;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  z-index: 99;
+  .logo {
+    height: 40px;
+    margin-top: 35px;
+  }
+  .gnb {
+    margin-top: 38px;
+    .dp1 {
+      display: flex;
+      li {
+        width: 165px;
+        text-align: center;
+        .title {
+          font-size: 18px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        .dp2 {
+          margin-top: 28px;
+          > a {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 35px;
+            text-align: center;
+            white-space: nowrap;
+            color: $font-color-gray;
+            &:hover {
+              color: $main-color;
+              text-decoration: underline;
+            }
+          }
+        }
+        &:hover {
+          .title {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  &:has(.gnb:hover) {
+    max-height: 425px;
+    transition: max-height 0.3s;
+  }
+}

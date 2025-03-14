@@ -1,33 +1,33 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import "@/assets/reset.scss";
+import "@/assets/common.scss";
+import "@/assets/font.scss";
+import Home from "@/pages/Home";
+import Header from "@/components/Header";
+import Footer from "./components/Footer";
+import Sandwich from "./pages/menulist/Sandwich";
+import Unit from "./pages/menulist/Unit";
+import Salad from "./pages/menulist/Salad";
+import Morning from "./pages/menulist/Morning";
+import SideDrink from "./pages/menulist/SideDrink";
+import Catering from "./pages/menulist/Catering";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sandwich" element={<Sandwich />} />
+          <Route path="/unit" element={<Unit />} />
+          <Route path="/salad" element={<Salad />} />
+          <Route path="/morning" element={<Morning />} />
+          <Route path="/sidedrink" element={<SideDrink />} />
+          <Route path="/catering" element={<Catering />} />
+        </Routes>
       </div>
-      <h1>서브웨이/vercel 연결확인</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer />
     </>
   );
 }
