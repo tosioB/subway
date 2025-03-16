@@ -5,12 +5,40 @@
   background: url("/images/bg_content.gif");
 }
 
+.menulist-page {
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: $ui-width;
+  margin: 0 auto;
+}
+
+.logo {
+  a {
+    background: url("/images/logo.png") no-repeat 50% 50% / 100%;
+  }
+}
+
 .sub-header {
-  position: sticky;
-  top: 0;
+  position: absolute;
+  top: $header-height;
+  width: 100%;
   border-bottom: 1px solid;
   border-color: rgba(255, 255, 255, 0.1);
-  > ul {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .top-btn {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .dp2-list {
     display: flex;
     justify-content: center;
     li {
@@ -20,7 +48,7 @@
       position: relative;
       &.active {
         a {
-          color: $main-color;
+          color: $main-color-green;
         }
       }
       &::after {
@@ -31,7 +59,7 @@
         transform: translateY(-50%);
         width: 4px;
         height: 4px;
-        background-color: #ddd;
+        background-color: $border-color-light-gray;
         border-radius: 50%;
       }
       &:first-child {
@@ -42,9 +70,168 @@
         }
       }
       a {
-        font-weight: 700;
         color: $font-color-white;
       }
     }
   }
+}
+
+.sub-banner {
+  height: 380px;
+  background: $main-color-dark-green url("/images/img_visual_sandwich.jpg")
+    no-repeat 50% 50%;
+}
+
+.goods-tab {
+  .tab-btn-wrap {
+    margin-top: -40px;
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
+    button {
+      height: 80px;
+      padding: 0 24px;
+      font-family: "Subway-SixInch";
+      color: $font-color-gray;
+      position: relative;
+      &.active {
+        font-weight: 700;
+        color: $main-color-green;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 15px;
+        background-color: $border-color-light-gray;
+      }
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .tab-con-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 130px;
+  }
+}
+
+.goods-card {
+  width: 370px;
+  height: 330px;
+  background-color: #fff;
+  position: relative;
+  a {
+    height: 100%;
+    position: relative;
+    .goods-img {
+      display: block;
+      width: 100%;
+      padding: 20px 50px 0;
+      img {
+        width: 100%;
+      }
+    }
+    .goods-detail {
+      // padding: 0 50px;
+      text-align: center;
+      .kor-name {
+        position: relative;
+        top: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: $font-color-black;
+        z-index: 2;
+      }
+      .eng-name {
+        position: relative;
+        top: 0;
+        margin-top: 8px;
+        font-family: "Subway-SixInch";
+        color: #666;
+        z-index: 2;
+      }
+      .description {
+        position: relative;
+        left: 50%;
+        top: -92px;
+        transform: translateX(-50%);
+        width: 330px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        word-break: keep-all;
+        color: $main-color-light-green;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2;
+      }
+      .more-icon {
+        position: absolute;
+        left: 50%;
+        bottom: 150px;
+        transform: translateX(-50%) scale(0);
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        background: $sub-color url("/images/more_icon.svg") no-repeat 50% 50% /
+          28px;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $main-color-green;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.4s ease-out;
+    }
+    &:hover {
+      .goods-detail {
+        .kor-name,
+        .eng-name {
+          color: #fff;
+          top: -159px;
+          transition: top 0.4s ease-out;
+        }
+        .description {
+          top: -148px;
+          transition: all 0.4s 0.1s ease-out;
+          visibility: visible;
+          opacity: 1;
+        }
+        .more-icon {
+          bottom: 24px;
+          transform: translateX(-50%) scale(1);
+          transition: all 0.4s 0.1s ease-out;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &::after {
+        opacity: 1;
+        transition: opacity 0.4s ease-out;
+      }
+    }
+  }
+}
+
+.ds {
+  height: 3000px;
+  background-color: #9494b6;
 }

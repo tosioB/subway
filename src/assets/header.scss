@@ -1,24 +1,25 @@
 @use "./variables" as *;
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   min-height: $header-height;
   max-height: $header-height;
   padding-bottom: 24px;
   background-color: #fff;
   border-top: 5px solid;
-  border-color: $main-color;
+  border-color: $main-color-green;
   overflow: hidden;
   transition: max-height 0.3s;
   z-index: 99;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .logo {
-    height: 40px;
     margin-top: 35px;
   }
   .gnb {
@@ -43,14 +44,14 @@
             white-space: nowrap;
             color: $font-color-gray;
             &:hover {
-              color: $main-color;
+              color: $main-color-green;
               text-decoration: underline;
             }
           }
         }
         &:hover {
           .title {
-            color: $main-color;
+            color: $main-color-green;
           }
         }
       }
