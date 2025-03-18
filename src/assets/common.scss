@@ -21,22 +21,12 @@
 }
 
 .sub-header {
-  position: absolute;
-  top: $header-height;
   width: 100%;
   border-bottom: 1px solid;
-  border-color: rgba(255, 255, 255, 0.1);
+  z-index: 3;
   .container {
     display: flex;
     justify-content: space-between;
-  }
-  .logo {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .top-btn {
-    opacity: 0;
-    visibility: hidden;
   }
   .dp2-list {
     display: flex;
@@ -126,11 +116,13 @@
 .goods-card {
   width: 370px;
   height: 330px;
-  background-color: #fff;
   position: relative;
   a {
     height: 100%;
     position: relative;
+    background-color: #fff;
+    transform: scale(0);
+    opacity: 0;
     .goods-img {
       display: block;
       width: 100%;
@@ -228,6 +220,25 @@
         transition: opacity 0.4s ease-out;
       }
     }
+  }
+}
+
+.top-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Subway-SixInch";
+  font-size: 13px;
+  font-weight: 700;
+  color: $font-color-light-gray;
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 9px;
+    background: url("/images/arr_top_gray.png") no-repeat 50% 50% / 100%;
   }
 }
 

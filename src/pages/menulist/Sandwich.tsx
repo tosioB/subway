@@ -36,7 +36,7 @@ const tabItem = [
 const Sandwich = () => {
   return (
     <div className="sandwich-page menulist-page">
-      <SubHeader category="메뉴소개" activeColor="#ffce32" />
+      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
       <SubImgBanner />
       <GoodsTab tabItem={tabItem} />
     </div>

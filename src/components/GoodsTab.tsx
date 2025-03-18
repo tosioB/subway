@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GoodsCard from "./GoodsCard";
 
 interface TabItem {
@@ -10,7 +10,7 @@ interface TabItem {
     korName: string;
     engName: string;
     description: string;
-    subCategory?: string; // 있을 수도 있고 없을 수도 있음
+    subCategory?: string;
   }[];
 }
 
@@ -19,9 +19,28 @@ interface GoodsTabProps {
 }
 
 const GoodsTab = ({ tabItem }: GoodsTabProps) => {
-  const [activeTab, setActiveTab] = useState(tabItem[0]?.id || 1);
-  const filteredData =
-    tabItem.find((tab) => tab.id === activeTab)?.content() || [];
+  const storedTab = localStorage.getItem("activeTab");
+  const initialTab = storedTab ? Number(storedTab) : tabItem[0]?.id || 1;
+  const [activeTab, setActiveTab] = useState(initialTab);
+  const [filteredData, setFilteredData] = useState(
+    tabItem.find((tab) => tab.id === activeTab)?.content() || []
+  );
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(false); // 기존 카드 숨기기
+    setTimeout(() => {
+      setFilteredData(
+        tabItem.find((tab) => tab.id === activeTab)?.content() || []
+      );
+      setIsVisible(true); // 새로운 카드 표시
+    }, 300); // 기존 카드 애니메이션이 끝난 후 변경
+  }, [activeTab]);
+
+  // activeTab 변경 시 localStorage에 저장
+  useEffect(() => {
+    localStorage.setItem("activeTab", String(activeTab));
+  }, [activeTab]);
 
   return (
     <div className="goods-tab">
@@ -47,6 +66,7 @@ const GoodsTab = ({ tabItem }: GoodsTabProps) => {
                 korName={item.korName}
                 engName={item.engName}
                 description={item.description}
+                isVisible={isVisible}
               />
             );
           })}
