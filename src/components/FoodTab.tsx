@@ -1,24 +1,18 @@
 import { useEffect, useState } from "react";
-import GoodsCard from "./GoodsCard";
+import FoodCard from "./FoodCard";
+import { FoodItem } from "@/types/FoodItem";
 
 interface TabItem {
   id: number;
   tabTitle: string;
-  content: () => {
-    id: number;
-    image: string;
-    korName: string;
-    engName: string;
-    description: string;
-    subCategory?: string;
-  }[];
+  content: () => FoodItem[]; // FoodItem 배열을 반환하는 함수
 }
 
-interface GoodsTabProps {
+interface FoodTabProps {
   tabItem: TabItem[];
 }
 
-const GoodsTab = ({ tabItem }: GoodsTabProps) => {
+const FoodTab = ({ tabItem }: FoodTabProps) => {
   const storedTab = localStorage.getItem("activeTab");
   const initialTab = storedTab ? Number(storedTab) : tabItem[0]?.id || 1;
   const [activeTab, setActiveTab] = useState(initialTab);
@@ -43,7 +37,7 @@ const GoodsTab = ({ tabItem }: GoodsTabProps) => {
   }, [activeTab]);
 
   return (
-    <div className="goods-tab">
+    <div className="food-tab">
       <div className="container">
         <div className="tab-btn-wrap">
           {tabItem.map((tab) => (
@@ -59,16 +53,7 @@ const GoodsTab = ({ tabItem }: GoodsTabProps) => {
         </div>
         <div className="tab-con-wrap">
           {filteredData.map((item) => {
-            return (
-              <GoodsCard
-                key={item.id}
-                image={item.image}
-                korName={item.korName}
-                engName={item.engName}
-                description={item.description}
-                isVisible={isVisible}
-              />
-            );
+            return <FoodCard key={item.id} item={item} isVisible={isVisible} />;
           })}
         </div>
       </div>
@@ -76,4 +61,4 @@ const GoodsTab = ({ tabItem }: GoodsTabProps) => {
   );
 };
 
-export default GoodsTab;
+export default FoodTab;

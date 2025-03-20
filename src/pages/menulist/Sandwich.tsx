@@ -1,10 +1,10 @@
-import GoodsTab from "@/components/GoodsTab";
+import FoodTab from "@/components/FoodTab";
 import SubHeader from "@/components/SubHeader";
 import SubImgBanner from "@/components/SubImgBanner";
 import { sandwichData } from "@/data/sandwichData";
-import { toppingData } from "@/data/toppingData";
+import { TabItem } from "@/types/TabItem";
 
-const tabItem = [
+const tabItem: TabItem[] = [
   { id: 1, tabTitle: "All", content: () => sandwichData },
   {
     id: 2,
@@ -29,7 +29,7 @@ const tabItem = [
   {
     id: 6,
     tabTitle: "추가 선택",
-    content: () => toppingData
+    content: () => sandwichData.filter((item) => item.subCategory === "topping")
   }
 ];
 
@@ -38,7 +38,7 @@ const Sandwich = () => {
     <div className="sandwich-page menulist-page">
       <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
       <SubImgBanner />
-      <GoodsTab tabItem={tabItem} />
+      <FoodTab tabItem={tabItem} />
     </div>
   );
 };

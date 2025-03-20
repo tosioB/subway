@@ -4,7 +4,7 @@ export const menuList = {
   title: "메뉴소개",
   links: [
     { path: "/sandwich", label: "샌드위치" },
-    { path: "/unit", label: "랩ㆍ기타" },
+    { path: "/wrap", label: "랩ㆍ기타" },
     { path: "/salad", label: "샐러드" },
     { path: "/morning", label: "아침메뉴" },
     { path: "/sidedrink", label: "스마일 썹" },

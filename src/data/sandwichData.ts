@@ -1,4 +1,6 @@
-export const sandwichData = [
+import { FoodItem } from "@/types/FoodItem";
+
+export const sandwichData: FoodItem[] = [
   {
     id: 1,
     category: "sandwich",
@@ -18,7 +20,8 @@ export const sandwichData = [
       saturatedFat: { value: 2.5, dailyPercent: 16 }, // 포화지방
       sugar: { value: 8 }, // 당류
       sodium: { value: 598, dailyPercent: 30 } // 나트륨
-    }
+    },
+    detailPage: true
   },
   {
     id: 2,
@@ -45,7 +48,8 @@ export const sandwichData = [
       saturatedFat: { value: 4.2, dailyPercent: 28 },
       sugar: { value: 8.8, dailyPercent: 9 },
       sodium: { value: 780, dailyPercent: 39 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 3,
@@ -79,7 +83,8 @@ export const sandwichData = [
       saturatedFat: { value: 5.9, dailyPercent: 39 },
       sugar: { value: 8.6, dailyPercent: 9 },
       sodium: { value: 1064, dailyPercent: 53 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 4,
@@ -100,7 +105,8 @@ export const sandwichData = [
       saturatedFat: { value: 2.5, dailyPercent: 17 },
       sugar: { value: 7.8, dailyPercent: 8 },
       sodium: { value: 542, dailyPercent: 27 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 5,
@@ -121,7 +127,8 @@ export const sandwichData = [
       saturatedFat: { value: 4.8, dailyPercent: 32 },
       sugar: { value: 7.7, dailyPercent: 8 },
       sodium: { value: 552, dailyPercent: 28 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 6,
@@ -142,7 +149,8 @@ export const sandwichData = [
       saturatedFat: { value: 4.3, dailyPercent: 29 },
       sugar: { value: 8.3 },
       sodium: { value: 830, dailyPercent: 42 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 7,
@@ -169,7 +177,8 @@ export const sandwichData = [
       saturatedFat: { value: 3.2, dailyPercent: 21 },
       sugar: { value: 9.0, dailyPercent: 9 },
       sodium: { value: 940, dailyPercent: 47 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 8,
@@ -190,7 +199,8 @@ export const sandwichData = [
       saturatedFat: { value: 0.9, dailyPercent: 6 },
       sugar: { value: 9.1, dailyPercent: 9 },
       sodium: { value: 570, dailyPercent: 29 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 9,
@@ -211,7 +221,8 @@ export const sandwichData = [
       saturatedFat: { value: 0.6, dailyPercent: 4 },
       sugar: { value: 7.9, dailyPercent: 8 },
       sodium: { value: 415, dailyPercent: 21 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 10,
@@ -231,7 +242,8 @@ export const sandwichData = [
       saturatedFat: { value: 1.3, dailyPercent: 9 },
       sugar: { value: 8.7, dailyPercent: 9 },
       sodium: { value: 605, dailyPercent: 30 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 11,
@@ -251,7 +263,8 @@ export const sandwichData = [
       saturatedFat: { value: 2.1, dailyPercent: 14 },
       sugar: { value: 7.8, dailyPercent: 8 },
       sodium: { value: 689, dailyPercent: 34 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 12,
@@ -271,7 +284,8 @@ export const sandwichData = [
       saturatedFat: { value: 2.1, dailyPercent: 14 },
       sugar: { value: 7.8, dailyPercent: 8 },
       sodium: { value: 689, dailyPercent: 34 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 13,
@@ -292,7 +306,8 @@ export const sandwichData = [
       saturatedFat: { value: 1.2, dailyPercent: 8 },
       sugar: { value: 10.1, dailyPercent: 10 },
       sodium: { value: 698, dailyPercent: 35 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 14,
@@ -313,7 +328,8 @@ export const sandwichData = [
       saturatedFat: { value: 9.1, dailyPercent: 60 },
       sugar: { value: 8.7, dailyPercent: 9 },
       sodium: { value: 1250, dailyPercent: 63 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 15,
@@ -333,7 +349,8 @@ export const sandwichData = [
       saturatedFat: { value: 3.7, dailyPercent: 25 },
       sugar: { value: 7.9, dailyPercent: 8 },
       sodium: { value: 666, dailyPercent: 33 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 16,
@@ -353,7 +370,8 @@ export const sandwichData = [
       saturatedFat: { value: 0.9, dailyPercent: 6 },
       sugar: { value: 8.7, dailyPercent: 9 },
       sodium: { value: 751, dailyPercent: 37 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 17,
@@ -374,7 +392,8 @@ export const sandwichData = [
       saturatedFat: { value: 0.6, dailyPercent: 4 },
       sugar: { value: 7.7 },
       sodium: { value: 376, dailyPercent: 19 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 18,
@@ -395,7 +414,8 @@ export const sandwichData = [
       saturatedFat: { value: 1.4, dailyPercent: 9 },
       sugar: { value: 7.6, dailyPercent: 8 },
       sodium: { value: 535, dailyPercent: 27 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 19,
@@ -415,7 +435,8 @@ export const sandwichData = [
       saturatedFat: { value: 1, dailyPercent: 7 },
       sugar: { value: 8.4, dailyPercent: 8 },
       sodium: { value: 680, dailyPercent: 34 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 20,
@@ -436,7 +457,8 @@ export const sandwichData = [
       saturatedFat: { value: 2.3, dailyPercent: 16 },
       sugar: { value: 7.6, dailyPercent: 7.6 },
       sodium: { value: 447, dailyPercent: 22 }
-    }
+    },
+    detailPage: true
   },
   {
     id: 21,
@@ -456,6 +478,104 @@ export const sandwichData = [
       saturatedFat: { value: 0.6, dailyPercent: 4 },
       sugar: { value: 7.6, dailyPercent: 8 },
       sodium: { value: 262, dailyPercent: 13 }
-    }
+    },
+    detailPage: true
+  },
+  {
+    id: 22,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "미트 추가",
+    engName: "Meet",
+    image: "/images/topping/meat.png",
+    description: "주 재료를 2배로 더 푸짐하게 즐기세요",
+    price15cm: 3000,
+    price30cm: 6000,
+    detailPage: false
+  },
+  {
+    id: 23,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "에그마요",
+    engName: "Egg Mayo",
+    image: "/images/topping/egg_mayo.png",
+    description: "고소한 마요네즈의 만남",
+    price15cm: 2000,
+    price30cm: 4000,
+    detailPage: false
+  },
+  {
+    id: 24,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "베이컨",
+    engName: "Bacon",
+    image: "/images/topping/bacon.png",
+    description: "진한 풍미와 바삭한 베이컨으로\n특별한 나만의 써브웨이~",
+    price15cm: 1500,
+    price30cm: 3000,
+    detailPage: false,
+    etc: "※ 샌드위치와 샐러드 메뉴에 기본으로\n제공되는 베이컨은 샌드위치(베이컨),\n샐러드(베이컨 비츠)로 제공됩니다."
+  },
+  {
+    id: 25,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "치즈 추가",
+    engName: "Cheese",
+    image: "/images/topping/cheese.jpg",
+    description: "고소한 치즈를 2배로!",
+    price15cm: 1400,
+    price30cm: 2800,
+    detailPage: false
+  },
+  {
+    id: 26,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "에그 슬라이스",
+    engName: "Egg Slice",
+    image: "/images/topping/egg_slice.png",
+    description: "신선한 달걀의 담백함을 추가해,\n더 든든하게 즐겨보세요.",
+    price15cm: 1200,
+    price30cm: 2400,
+    detailPage: false
+  },
+  {
+    id: 27,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "아보카도",
+    engName: "Avocado",
+    image: "/images/topping/avocado.png",
+    description: "숲속의 버터 아보카도로 영양 UP",
+    price15cm: 1500,
+    price30cm: 3000,
+    detailPage: false
+  },
+  {
+    id: 28,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "오믈렛",
+    engName: "Omelet",
+    image: "/images/topping/omelet.png",
+    description: "더 부드럽게, 더 고소하게",
+    price15cm: 1800,
+    price30cm: 3600,
+    detailPage: false
+  },
+  {
+    id: 29,
+    category: "sandwich",
+    subCategory: "topping",
+    korName: "페퍼로니",
+    engName: "Pepperoni",
+    image: "/images/topping/pepperoni.jpg",
+    description: "입맛 당기는 페퍼로니로\n써브웨이를 더 맛있게!",
+    price15cm: 1500,
+    price30cm: 3000,
+    detailPage: false
   }
 ];
