@@ -21,7 +21,7 @@ interface SubHeaderProps {
 const SubHeader = ({
   category,
   basicColor = "#999",
-  activeColor = "#009223"
+  activeColor = "#009223",
 }: SubHeaderProps) => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +59,7 @@ const SubHeader = ({
         borderColor: isScrolled
           ? "rgba(229, 229, 229, 1)"
           : "rgba(229, 229, 229, 0.1)",
-        transition: "background-color 0.3s"
+        transition: "background-color 0.3s",
       }}
     >
       <div className="container">
@@ -68,7 +68,7 @@ const SubHeader = ({
           height="60px"
           style={{
             visibility: isScrolled ? "visible" : "hidden",
-            opacity: isScrolled ? 1 : 0
+            opacity: isScrolled ? 1 : 0,
           }}
         />
         <ul className="dp2-list">
@@ -80,7 +80,9 @@ const SubHeader = ({
                   to={item.path}
                   style={{
                     color: isActive ? activeColor : computedBasicColor,
-                    borderBottom: isActive ? `4px solid ${activeColor}` : "none"
+                    borderBottom: isActive
+                      ? `4px solid ${activeColor}`
+                      : "none",
                   }}
                 >
                   {item.label}
@@ -92,7 +94,7 @@ const SubHeader = ({
         <TopBtn
           style={{
             visibility: isScrolled ? "visible" : "hidden",
-            opacity: isScrolled ? 1 : 0
+            opacity: isScrolled ? 1 : 0,
           }}
         />
       </div>
