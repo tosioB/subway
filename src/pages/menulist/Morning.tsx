@@ -9,19 +9,20 @@ const tabItem: TabItem[] = [
   {
     id: 2,
     tabTitle: "샌드위치",
-    content: () => morningData.filter((item) => item.subCategory === "sandwich")
+    content: () =>
+      morningData.filter((item) => item.subCategory === "sandwich"),
   },
   {
     id: 3,
     tabTitle: "랩",
-    content: () => morningData.filter((item) => item.subCategory === "wrap")
-  }
+    content: () => morningData.filter((item) => item.subCategory === "wrap"),
+  },
 ];
 
 const Morning = () => {
   return (
     <div className="morning-page menulist-page">
-      <SubHeader category="메뉴소개" activeColor="#ffce32" />
+      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
       <SubImgBanner />
       <FoodTab tabItem={tabItem} />
     </div>

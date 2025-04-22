@@ -1,12 +1,12 @@
 export interface FoodItem {
   id: number;
   category: string;
-  subCategory: string;
+  subCategory?: string;
   korName: string;
   engName: string;
   image: string;
   description: string;
-  label?: string;
+  label?: "SUBPICK" | "NEW" | "PARTY";
   baseRecipe?: string[];
   extraRecipe?: string[];
   nutrition?: {

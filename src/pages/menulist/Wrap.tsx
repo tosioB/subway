@@ -9,19 +9,19 @@ const tabItem: TabItem[] = [
   {
     id: 2,
     tabTitle: "시그니처",
-    content: () => wrapData.filter((item) => item.subCategory === "signature")
+    content: () => wrapData.filter((item) => item.subCategory === "signature"),
   },
   {
     id: 3,
     tabTitle: "미니랩",
-    content: () => wrapData.filter((item) => item.subCategory === "mini")
-  }
+    content: () => wrapData.filter((item) => item.subCategory === "mini"),
+  },
 ];
 
 const Wrap = () => {
   return (
     <div className="wrap-page menulist-page">
-      <SubHeader category="메뉴소개" activeColor="#ffce32" />
+      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
       <SubImgBanner />
       <FoodTab tabItem={tabItem} />
     </div>

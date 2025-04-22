@@ -13,27 +13,20 @@ interface FoodTabProps {
 }
 
 const FoodTab = ({ tabItem }: FoodTabProps) => {
-  const storedTab = localStorage.getItem("activeTab");
-  const initialTab = storedTab ? Number(storedTab) : tabItem[0]?.id || 1;
-  const [activeTab, setActiveTab] = useState(initialTab);
+  const [activeTab, setActiveTab] = useState(tabItem[0]?.id || 1); // 항상 첫 탭으로 시작
   const [filteredData, setFilteredData] = useState(
     tabItem.find((tab) => tab.id === activeTab)?.content() || []
   );
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(false); // 기존 카드 숨기기
+    setIsVisible(false);
     setTimeout(() => {
       setFilteredData(
         tabItem.find((tab) => tab.id === activeTab)?.content() || []
       );
-      setIsVisible(true); // 새로운 카드 표시
-    }, 300); // 기존 카드 애니메이션이 끝난 후 변경
-  }, [activeTab]);
-
-  // activeTab 변경 시 localStorage에 저장
-  useEffect(() => {
-    localStorage.setItem("activeTab", String(activeTab));
+      setIsVisible(true);
+    }, 300);
   }, [activeTab]);
 
   return (

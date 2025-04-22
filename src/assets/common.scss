@@ -126,6 +126,9 @@
     background-color: #fff;
     transform: scale(0);
     opacity: 0;
+    .label {
+      color: red;
+    }
     .food-img {
       display: block;
       width: 100%;
@@ -135,7 +138,6 @@
       }
     }
     .food-detail {
-      // padding: 0 50px;
       text-align: center;
       .kor-name {
         position: relative;

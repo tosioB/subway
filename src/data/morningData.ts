@@ -17,8 +17,9 @@ export const morningData: FoodItem[] = [
       protein: { value: 20.3, dailyPercent: 37 },
       saturatedFat: { value: 3.2, dailyPercent: 22 },
       sugar: { value: 6.5, dailyPercent: 6 },
-      sodium: { value: 951, dailyPercent: 48 }
-    }
+      sodium: { value: 951, dailyPercent: 48 },
+    },
+    detailPage: true,
   },
   {
     id: 2,
@@ -37,8 +38,9 @@ export const morningData: FoodItem[] = [
       protein: { value: 18.2, dailyPercent: 33 },
       saturatedFat: { value: 3.1, dailyPercent: 21 },
       sugar: { value: 7.8, dailyPercent: 8 },
-      sodium: { value: 849, dailyPercent: 42 }
-    }
+      sodium: { value: 849, dailyPercent: 42 },
+    },
+    detailPage: true,
   },
   {
     id: 3,
@@ -57,8 +59,9 @@ export const morningData: FoodItem[] = [
       protein: { value: 8, dailyPercent: 15 },
       saturatedFat: { value: 1, dailyPercent: 3 },
       sugar: { value: 6 },
-      sodium: { value: 667, dailyPercent: 33 }
-    }
+      sodium: { value: 667, dailyPercent: 33 },
+    },
+    detailPage: true,
   },
   {
     id: 4,
@@ -77,7 +80,8 @@ export const morningData: FoodItem[] = [
       protein: { value: 8, dailyPercent: 15 },
       saturatedFat: { value: 1, dailyPercent: 3 },
       sugar: { value: 7 },
-      sodium: { value: 669, dailyPercent: 33 }
-    }
-  }
+      sodium: { value: 669, dailyPercent: 33 },
+    },
+    detailPage: true,
+  },
 ];
