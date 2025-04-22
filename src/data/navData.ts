@@ -1,7 +1,7 @@
 // 메뉴소개
 export const menuList = {
   id: 1,
-  title: "메뉴소개1",
+  title: "메뉴소개",
   links: [
     { path: "/sandwich", label: "샌드위치" },
     { path: "/wrap", label: "랩ㆍ기타" },
