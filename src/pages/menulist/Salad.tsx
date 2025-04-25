@@ -37,7 +37,10 @@ const Salad = () => {
   return (
     <div className="salad-page menulist-page">
       <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
-      <SubImgBanner />
+      <SubImgBanner
+        backgroundColor="#009223"
+        backgroundImage="/images/img_subpick_bg.jpg"
+      />
       <FoodTab tabItem={tabItem} />
     </div>
   );

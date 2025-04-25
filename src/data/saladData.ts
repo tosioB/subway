@@ -13,15 +13,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["안창 비프", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "올리브", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 342 },
-      calories: { value: 180 },
-      protein: { value: 15, dailyPercent: 27 },
-      saturatedFat: { value: 4, dailyPercent: 25 },
-      sugar: { value: 8 },
-      sodium: { value: 588, dailyPercent: 29 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 342 },
+        calories: { value: 180 },
+        protein: { value: 15, dailyPercent: 27 },
+        saturatedFat: { value: 4, dailyPercent: 25 },
+        sugar: { value: 8 },
+        sodium: { value: 588, dailyPercent: 29 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 2,
@@ -35,15 +37,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["안창 비프", "머쉬룸", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "스위트 어니언", "랜치"],
-    nutrition: {
-      weight: { value: 342 },
-      calories: { value: 130 },
-      protein: { value: 10, dailyPercent: 18 },
-      saturatedFat: { value: 2, dailyPercent: 13 },
-      sugar: { value: 8 },
-      sodium: { value: 356, dailyPercent: 18 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 342 },
+        calories: { value: 130 },
+        protein: { value: 10, dailyPercent: 18 },
+        saturatedFat: { value: 2, dailyPercent: 13 },
+        sugar: { value: 8 },
+        sodium: { value: 356, dailyPercent: 18 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 3,
@@ -57,15 +61,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["머쉬룸", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "랜치", "후추"],
-    nutrition: {
-      weight: { value: 342 },
-      calories: { value: 83 },
-      protein: { value: 5.1, dailyPercent: 9 },
-      saturatedFat: { value: 0.1, dailyPercent: 1 },
-      sugar: { value: 7.3 },
-      sodium: { value: 133, dailyPercent: 7 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 342 },
+        calories: { value: 83 },
+        protein: { value: 5.1, dailyPercent: 9 },
+        saturatedFat: { value: 0.1, dailyPercent: 1 },
+        sugar: { value: 7.3 },
+        sodium: { value: 133, dailyPercent: 7 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 4,
@@ -81,18 +87,20 @@ export const saladData: FoodItem[] = [
       "터키 3장",
       "베이컨 비츠 10g",
       "아보카도 1스쿱",
-      "모짜렐라 치즈"
+      "모짜렐라 치즈",
     ],
     extraRecipe: ["야채 5종", "마요네즈", "스위트 어니언"],
-    nutrition: {
-      weight: { value: 354 },
-      calories: { value: 200 },
-      protein: { value: 13.7, dailyPercent: 24 },
-      saturatedFat: { value: 2.5, dailyPercent: 17 },
-      sugar: { value: 8.6, dailyPercent: 9 },
-      sodium: { value: 721, dailyPercent: 36 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 354 },
+        calories: { value: 200 },
+        protein: { value: 13.7, dailyPercent: 24 },
+        saturatedFat: { value: 2.5, dailyPercent: 17 },
+        sugar: { value: 8.6, dailyPercent: 9 },
+        sodium: { value: 721, dailyPercent: 36 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 5,
@@ -106,15 +114,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["터키 2장", "햄 1장", "베이컨 2장", "슈레드 치즈"],
     extraRecipe: ["야채 4종", "올리브", "랜치", "홀스래디쉬"],
-    nutrition: {
-      weight: { value: 324 },
-      calories: { value: 144 },
-      protein: { value: 13.3, dailyPercent: 24 },
-      saturatedFat: { value: 1.8, dailyPercent: 12 },
-      sugar: { value: 8.1, dailyPercent: 8 },
-      sodium: { value: 634, dailyPercent: 32 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 324 },
+        calories: { value: 144 },
+        protein: { value: 13.3, dailyPercent: 24 },
+        saturatedFat: { value: 1.8, dailyPercent: 12 },
+        sugar: { value: 8.1, dailyPercent: 8 },
+        sodium: { value: 634, dailyPercent: 32 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 6,
@@ -127,15 +137,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["터키 4장", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "올리브", "마요네즈", "사우스웨스트 치폴레"],
-    nutrition: {
-      weight: { value: 328 },
-      calories: { value: 103 },
-      protein: { value: 11.9, dailyPercent: 21 },
-      saturatedFat: { value: 0.4, dailyPercent: 3 },
-      sugar: { value: 8.3, dailyPercent: 8 },
-      sodium: { value: 509, dailyPercent: 25 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 328 },
+        calories: { value: 103 },
+        protein: { value: 11.9, dailyPercent: 21 },
+        saturatedFat: { value: 0.4, dailyPercent: 3 },
+        sugar: { value: 8.3, dailyPercent: 8 },
+        sodium: { value: 509, dailyPercent: 25 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 7,
@@ -153,17 +165,19 @@ export const saladData: FoodItem[] = [
       "피클",
       "할라피뇨",
       "마요네즈",
-      "사우스웨스트 치폴레"
+      "사우스웨스트 치폴레",
     ],
-    nutrition: {
-      weight: { value: 352 },
-      calories: { value: 193 },
-      protein: { value: 21.4, dailyPercent: 39 },
-      saturatedFat: { value: 3.7, dailyPercent: 25 },
-      sugar: { value: 8.4, dailyPercent: 8 },
-      sodium: { value: 538, dailyPercent: 27 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 352 },
+        calories: { value: 193 },
+        protein: { value: 21.4, dailyPercent: 39 },
+        saturatedFat: { value: 3.7, dailyPercent: 25 },
+        sugar: { value: 8.4, dailyPercent: 8 },
+        sodium: { value: 538, dailyPercent: 27 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 8,
@@ -177,15 +191,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["스파이시 쉬림프 5마리", "아메리칸 치즈"],
     extraRecipe: ["야채 4종", "올리브", "마요네즈", "홀스래디쉬"],
-    nutrition: {
-      weight: { value: 321 },
-      calories: { value: 83 },
-      protein: { value: 9.8, dailyPercent: 18 },
-      saturatedFat: { value: 0.4, dailyPercent: 3 },
-      sugar: { value: 8.7, dailyPercent: 9 },
-      sodium: { value: 328, dailyPercent: 16 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 321 },
+        calories: { value: 83 },
+        protein: { value: 9.8, dailyPercent: 18 },
+        saturatedFat: { value: 0.4, dailyPercent: 3 },
+        sugar: { value: 8.7, dailyPercent: 9 },
+        sodium: { value: 328, dailyPercent: 16 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 9,
@@ -199,15 +215,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["새우 5마리", "슈레드 치즈"],
     extraRecipe: ["야채 4종", "올리브", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 316 },
-      calories: { value: 79 },
-      protein: { value: 9.6, dailyPercent: 17 },
-      saturatedFat: { value: 0.1, dailyPercent: 1 },
-      sugar: { value: 7.5, dailyPercent: 7 },
-      sodium: { value: 173, dailyPercent: 9 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 316 },
+        calories: { value: 79 },
+        protein: { value: 9.6, dailyPercent: 17 },
+        saturatedFat: { value: 0.1, dailyPercent: 1 },
+        sugar: { value: 7.5, dailyPercent: 7 },
+        sodium: { value: 173, dailyPercent: 9 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 10,
@@ -220,15 +238,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["치킨 브레스트 1장", "슈레드 치즈"],
     extraRecipe: ["야채 5종", "허니 머스타드", "올리브오일"],
-    nutrition: {
-      weight: { value: 344 },
-      calories: { value: 138 },
-      protein: { value: 19.3, dailyPercent: 35 },
-      saturatedFat: { value: 0.8, dailyPercent: 6 },
-      sugar: { value: 8.3, dailyPercent: 8 },
-      sodium: { value: 363, dailyPercent: 18 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 344 },
+        calories: { value: 138 },
+        protein: { value: 19.3, dailyPercent: 35 },
+        saturatedFat: { value: 0.8, dailyPercent: 6 },
+        sugar: { value: 8.3, dailyPercent: 8 },
+        sodium: { value: 363, dailyPercent: 18 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 11,
@@ -242,15 +262,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["로티세리 치킨 1스쿱", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 356 },
-      calories: { value: 165 },
-      protein: { value: 22.4, dailyPercent: 41 },
-      saturatedFat: { value: 2, dailyPercent: 14 },
-      sugar: { value: 7.4, dailyPercent: 7 },
-      sodium: { value: 299, dailyPercent: 15 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 356 },
+        calories: { value: 165 },
+        protein: { value: 22.4, dailyPercent: 41 },
+        saturatedFat: { value: 2, dailyPercent: 14 },
+        sugar: { value: 7.4, dailyPercent: 7 },
+        sodium: { value: 299, dailyPercent: 15 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 12,
@@ -263,15 +285,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["풀드포크 1스쿱", "아메리칸 치즈"],
     extraRecipe: ["야채 5종", "랜치", "스모크 바비큐"],
-    nutrition: {
-      weight: { value: 342 },
-      calories: { value: 165 },
-      protein: { value: 18.1, dailyPercent: 33 },
-      saturatedFat: { value: 1.6, dailyPercent: 10 },
-      sugar: { value: 7.4, dailyPercent: 7 },
-      sodium: { value: 446, dailyPercent: 22 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 342 },
+        calories: { value: 165 },
+        protein: { value: 18.1, dailyPercent: 33 },
+        saturatedFat: { value: 1.6, dailyPercent: 10 },
+        sugar: { value: 7.4, dailyPercent: 7 },
+        sodium: { value: 446, dailyPercent: 22 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 13,
@@ -285,15 +309,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["치킨 데리야끼 1스쿱", "아메리칸 치즈"],
     extraRecipe: ["야채 4종", "올리브", "마요네즈", "홀스래디쉬"],
-    nutrition: {
-      weight: { value: 362 },
-      calories: { value: 152 },
-      protein: { value: 19.8, dailyPercent: 36 },
-      saturatedFat: { value: 0.7, dailyPercent: 5 },
-      sugar: { value: 9.7, dailyPercent: 10 },
-      sodium: { value: 455, dailyPercent: 23 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 362 },
+        calories: { value: 152 },
+        protein: { value: 19.8, dailyPercent: 36 },
+        saturatedFat: { value: 0.7, dailyPercent: 5 },
+        sugar: { value: 9.7, dailyPercent: 10 },
+        sodium: { value: 455, dailyPercent: 23 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 14,
@@ -307,15 +333,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["페페로니 5장", "살라미 5장", "슈레드 치즈"],
     extraRecipe: ["야채 5종", "스위트 어니언", "랜치"],
-    nutrition: {
-      weight: { value: 331 },
-      calories: { value: 302 },
-      protein: { value: 14, dailyPercent: 25 },
-      saturatedFat: { value: 8.6, dailyPercent: 57 },
-      sugar: { value: 8.3, dailyPercent: 8 },
-      sodium: { value: 1008, dailyPercent: 50 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 331 },
+        calories: { value: 302 },
+        protein: { value: 14, dailyPercent: 25 },
+        saturatedFat: { value: 8.6, dailyPercent: 57 },
+        sugar: { value: 8.3, dailyPercent: 8 },
+        sodium: { value: 1008, dailyPercent: 50 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 15,
@@ -334,17 +362,19 @@ export const saladData: FoodItem[] = [
       "피클",
       "할라피뇨",
       "스위트 어니언",
-      "랜치"
+      "랜치",
     ],
-    nutrition: {
-      weight: { value: 335 },
-      calories: { value: 226 },
-      protein: { value: 14.3, dailyPercent: 26 },
-      saturatedFat: { value: 5.4, dailyPercent: 36 },
-      sugar: { value: 8.2, dailyPercent: 8 },
-      sodium: { value: 822, dailyPercent: 41 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 335 },
+        calories: { value: 226 },
+        protein: { value: 14.3, dailyPercent: 26 },
+        saturatedFat: { value: 5.4, dailyPercent: 36 },
+        sugar: { value: 8.2, dailyPercent: 8 },
+        sodium: { value: 822, dailyPercent: 41 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 16,
@@ -357,15 +387,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["베이컨 비츠 20g", "모짜렐라 치즈"],
     extraRecipe: ["야채 5종", "랜치", "사우스웨스트 치폴레"],
-    nutrition: {
-      weight: { value: 291 },
-      calories: { value: 153 },
-      protein: { value: 9.5, dailyPercent: 17 },
-      saturatedFat: { value: 2.9, dailyPercent: 19 },
-      sugar: { value: 7.6, dailyPercent: 8 },
-      sodium: { value: 470, dailyPercent: 23 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 291 },
+        calories: { value: 153 },
+        protein: { value: 9.5, dailyPercent: 17 },
+        saturatedFat: { value: 2.9, dailyPercent: 19 },
+        sugar: { value: 7.6, dailyPercent: 8 },
+        sodium: { value: 470, dailyPercent: 23 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 17,
@@ -379,15 +411,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["참치 2스쿱", "슈레드 치즈"],
     extraRecipe: ["야채 5종", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 346 },
-      calories: { value: 153 },
-      protein: { value: 20.1, dailyPercent: 37 },
-      saturatedFat: { value: 0.9, dailyPercent: 6 },
-      sugar: { value: 7.3, dailyPercent: 7 },
-      sodium: { value: 292, dailyPercent: 15 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 346 },
+        calories: { value: 153 },
+        protein: { value: 20.1, dailyPercent: 37 },
+        saturatedFat: { value: 0.9, dailyPercent: 6 },
+        sugar: { value: 7.3, dailyPercent: 7 },
+        sodium: { value: 292, dailyPercent: 15 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 18,
@@ -400,15 +434,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["햄 4장", "모짜렐라 치즈"],
     extraRecipe: ["야채 5종", "올리브", "피클", "마요네즈", "홀스래디쉬"],
-    nutrition: {
-      weight: { value: 327 },
-      calories: { value: 99.5 },
-      protein: { value: 12.3, dailyPercent: 22 },
-      saturatedFat: { value: 0.5, dailyPercent: 3 },
-      sugar: { value: 8, dailyPercent: 8 },
-      sodium: { value: 438, dailyPercent: 22 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 327 },
+        calories: { value: 99.5 },
+        protein: { value: 12.3, dailyPercent: 22 },
+        saturatedFat: { value: 0.5, dailyPercent: 3 },
+        sugar: { value: 8, dailyPercent: 8 },
+        sodium: { value: 438, dailyPercent: 22 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 19,
@@ -422,15 +458,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["에그마요 2스쿱", "슈레드 치즈"],
     extraRecipe: ["야채 5종", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 346 },
-      calories: { value: 254 },
-      protein: { value: 9.7, dailyPercent: 18 },
-      saturatedFat: { value: 4.3, dailyPercent: 29 },
-      sugar: { value: 7.3, dailyPercent: 7 },
-      sodium: { value: 312, dailyPercent: 16 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 346 },
+        calories: { value: 254 },
+        protein: { value: 9.7, dailyPercent: 18 },
+        saturatedFat: { value: 4.3, dailyPercent: 29 },
+        sugar: { value: 7.3, dailyPercent: 7 },
+        sodium: { value: 312, dailyPercent: 16 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 20,
@@ -444,15 +482,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["에그 1개(슬라이스)", "모짜렐라 치즈"],
     extraRecipe: ["야채 5종", "올리브", "스위트 칠리", "랜치"],
-    nutrition: {
-      weight: { value: 312 },
-      calories: { value: 117 },
-      protein: { value: 8.5, dailyPercent: 15 },
-      saturatedFat: { value: 1.8, dailyPercent: 12 },
-      sugar: { value: 7.2, dailyPercent: 7.2 },
-      sodium: { value: 205, dailyPercent: 10 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 312 },
+        calories: { value: 117 },
+        protein: { value: 8.5, dailyPercent: 15 },
+        saturatedFat: { value: 1.8, dailyPercent: 12 },
+        sugar: { value: 7.2, dailyPercent: 7.2 },
+        sodium: { value: 205, dailyPercent: 10 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 21,
@@ -466,15 +506,17 @@ export const saladData: FoodItem[] = [
     label: "SUBPICK",
     baseRecipe: ["아메리칸 치즈"],
     extraRecipe: ["야채 5종", "엑스트라 버진 올리브 오일", "레드 와인 식초"],
-    nutrition: {
-      weight: { value: 271 },
-      calories: { value: 46.7 },
-      protein: { value: 2.5, dailyPercent: 5 },
-      saturatedFat: { value: 0.1, dailyPercent: 1 },
-      sugar: { value: 7.2, dailyPercent: 7 },
-      sodium: { value: 19.7, dailyPercent: 1 }
-    },
-    detailPage: true
+    nutrition: [
+      {
+        weight: { value: 271 },
+        calories: { value: 46.7 },
+        protein: { value: 2.5, dailyPercent: 5 },
+        saturatedFat: { value: 0.1, dailyPercent: 1 },
+        sugar: { value: 7.2, dailyPercent: 7 },
+        sodium: { value: 19.7, dailyPercent: 1 },
+      },
+    ],
+    detailPage: true,
   },
   {
     id: 22,
@@ -486,7 +528,7 @@ export const saladData: FoodItem[] = [
     description: "주 재료를 2배로 더 푸짐하게 즐기세요",
     price15cm: 3000,
     price30cm: 6000,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 23,
@@ -498,7 +540,7 @@ export const saladData: FoodItem[] = [
     description: "고소한 마요네즈의 만남",
     price15cm: 2000,
     price30cm: 4000,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 24,
@@ -511,7 +553,7 @@ export const saladData: FoodItem[] = [
     price15cm: 1500,
     price30cm: 3000,
     detailPage: false,
-    etc: "※ 샌드위치와 샐러드 메뉴에 기본으로\n제공되는 베이컨은 샌드위치(베이컨),\n샐러드(베이컨 비츠)로 제공됩니다."
+    etc: "※ 샌드위치와 샐러드 메뉴에 기본으로\n제공되는 베이컨은 샌드위치(베이컨),\n샐러드(베이컨 비츠)로 제공됩니다.",
   },
   {
     id: 25,
@@ -523,7 +565,7 @@ export const saladData: FoodItem[] = [
     description: "고소한 치즈를 2배로!",
     price15cm: 1400,
     price30cm: 2800,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 26,
@@ -535,7 +577,7 @@ export const saladData: FoodItem[] = [
     description: "신선한 달걀의 담백함을 추가해,\n더 든든하게 즐겨보세요.",
     price15cm: 1200,
     price30cm: 2400,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 27,
@@ -547,7 +589,7 @@ export const saladData: FoodItem[] = [
     description: "숲속의 버터 아보카도로 영양 UP",
     price15cm: 1500,
     price30cm: 3000,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 28,
@@ -559,7 +601,7 @@ export const saladData: FoodItem[] = [
     description: "더 부드럽게, 더 고소하게",
     price15cm: 1800,
     price30cm: 3600,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 29,
@@ -571,7 +613,7 @@ export const saladData: FoodItem[] = [
     description: "입맛 당기는 페퍼로니로\n써브웨이를 더 맛있게!",
     price15cm: 1500,
     price30cm: 3000,
-    detailPage: false
+    detailPage: false,
   },
   {
     id: 30,
@@ -584,7 +626,7 @@ export const saladData: FoodItem[] = [
     price15cm: 1500,
     price30cm: 3000,
     detailPage: false,
-    etc: "※ 샌드위치와 샐러드 메뉴에 기본으로\n제공되는 베이컨은 샌드위치(베이컨),\n샐러드(베이컨 비츠)로 제공됩니다."
+    etc: "※ 샌드위치와 샐러드 메뉴에 기본으로\n제공되는 베이컨은 샌드위치(베이컨),\n샐러드(베이컨 비츠)로 제공됩니다.",
   },
   {
     id: 31,
@@ -596,14 +638,16 @@ export const saladData: FoodItem[] = [
     description:
       "신선함과 간편함을 한 컵에 담아, 가볍고 건강하게 즐기는 미니 샐러드",
     label: "NEW",
-    nutrition: {
-      weight: { value: 94 },
-      calories: { value: 42 },
-      protein: { value: 5.3, dailyPercent: 9.7 },
-      saturatedFat: { value: 0.6, dailyPercent: 3.3 },
-      sugar: { value: 3 },
-      sodium: { value: 72, dailyPercent: 3.6 }
-    },
-    detailPage: true
-  }
+    nutrition: [
+      {
+        weight: { value: 94 },
+        calories: { value: 42 },
+        protein: { value: 5.3, dailyPercent: 9.7 },
+        saturatedFat: { value: 0.6, dailyPercent: 3.3 },
+        sugar: { value: 3 },
+        sodium: { value: 72, dailyPercent: 3.6 },
+      },
+    ],
+    detailPage: true,
+  },
 ];

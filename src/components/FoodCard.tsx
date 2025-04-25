@@ -28,14 +28,30 @@ const FoodCard = ({ item, isVisible }: FoodCardProps) => {
         cursor: item.detailPage ? "pointer" : "default",
       }}
     >
-      <span className="label">{item.label}</span>
+      <span
+        className="label"
+        style={{
+          backgroundColor:
+            item.label === "SUBPICK"
+              ? "#009223"
+              : item.label === "PARTY"
+              ? "#58006c"
+              : item.label === "NEW"
+              ? "#ffce32"
+              : "transparent", // 기본값
+        }}
+      >
+        {item.label}
+      </span>
       <span className="food-img">
         <img src={item.image} alt={item.korName} />
       </span>
       <div className="food-detail">
         <p className="kor-name">{item.korName}</p>
         <p className="eng-name">{item.engName}</p>
-        <p className="description">{item.description}</p>
+        <p className="description" style={{ whiteSpace: "pre-line" }}>
+          {item.description}
+        </p>
         {item.detailPage ? <span className="more-icon"></span> : null}
       </div>
     </div>

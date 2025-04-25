@@ -26,7 +26,14 @@
   z-index: 3;
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .dp2-list {
     display: flex;
@@ -64,15 +71,48 @@
       }
     }
   }
+  .top-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-.sub-banner {
+.sub-img-banner {
   height: 380px;
-  background: $main-color-dark-green url("/images/img_visual_sandwich.jpg")
-    no-repeat 50% 50%;
+  background: no-repeat 50% 50%;
+}
+
+.sub-any-banner {
+  height: 380px;
+  text-align: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: $font-color-white;
+  position: relative;
+  .title {
+    font-family: "Subway-Footlong";
+    padding: 104px 0 36px;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .detail-box {
+    line-height: 26px;
+    letter-spacing: -0.05rem;
+    position: relative;
+    z-index: 1;
+  }
+  .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .food-tab {
+  position: relative;
   .tab-btn-wrap {
     margin-top: -40px;
     margin-bottom: 60px;
@@ -127,7 +167,17 @@
     transform: scale(0);
     opacity: 0;
     .label {
-      color: red;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 70px;
+      height: 30px;
+      font-family: "Subway-Footlong";
+      font-size: 13px;
+      line-height: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: $font-color-white;
     }
     .food-img {
       display: block;
@@ -178,8 +228,8 @@
         width: 60px;
         height: 60px;
         margin: 0 auto;
-        background: $sub-color url("/images/more_icon.svg") no-repeat 50% 50% /
-          28px;
+        background: $sub-color-yellow url("/images/more_icon.svg") no-repeat 50%
+          50% / 28px;
         border-radius: 50%;
         visibility: hidden;
         opacity: 0;

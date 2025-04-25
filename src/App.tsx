@@ -9,7 +9,7 @@ import Sandwich from "./pages/menulist/Sandwich";
 import Wrap from "./pages/menulist/Wrap";
 import Salad from "./pages/menulist/Salad";
 import Morning from "./pages/menulist/Morning";
-import SideDrink from "./pages/menulist/SideDrink";
+import SmileSub from "./pages/menulist/SmileSub";
 import Catering from "./pages/menulist/Catering";
 import FoodDetail from "./pages/FoodDetail";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/wrap" element={<Wrap />} />
           <Route path="/salad" element={<Salad />} />
           <Route path="/morning" element={<Morning />} />
-          <Route path="/sidedrink" element={<SideDrink />} />
+          <Route path="/smile_sub" element={<SmileSub />} />
           <Route path="/catering" element={<Catering />} />
 
           {/* 메뉴 상세페이지 */}

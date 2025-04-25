@@ -7,7 +7,7 @@ export const menuList = {
     { path: "/wrap", label: "랩ㆍ기타" },
     { path: "/salad", label: "샐러드" },
     { path: "/morning", label: "아침메뉴" },
-    { path: "/sidedrink", label: "스마일 썹" },
+    { path: "/smile_sub", label: "스마일 썹" },
     { path: "/catering", label: "단체메뉴" },
   ],
 };
