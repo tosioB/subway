@@ -9,14 +9,13 @@ const tabItem: TabItem[] = [
   {
     id: 2,
     tabTitle: "샌드위치",
-    content: () =>
-      morningData.filter((item) => item.subCategory === "sandwich"),
+    content: () => morningData.filter((item) => item.subCategory === "sandwich")
   },
   {
     id: 3,
     tabTitle: "랩",
-    content: () => morningData.filter((item) => item.subCategory === "wrap"),
-  },
+    content: () => morningData.filter((item) => item.subCategory === "wrap")
+  }
 ];
 
 const Morning = () => {
@@ -29,21 +28,21 @@ const Morning = () => {
         title="Morning Menu"
         description={"아침 메뉴도 Subway와 함께, 취향대로 즐기자"}
         etc={"* 그릴드 랩은 일부 매장에서만 제공 가능합니다."}
-        image01Src="/images/morning_sub_any_img01.jpg"
-        image02Src="/images/morning_sub_any_img02.jpg"
+        image01Src="/images/sub_any_morning_img_01.jpg"
+        image02Src="/images/sub_any_morning_img_02.jpg"
         image01Style={{
-          startTop: "-215px",
-          endTop: "0px",
-          startRight: "-248px",
-          endRight: "-248px",
-          transition: "all 0.8s 0.3s",
+          startX: 356,
+          endX: 356,
+          startY: -400,
+          endY: -192,
+          transition: "all 0.4s 0.6s"
         }}
         image02Style={{
-          startTop: "0px",
-          endTop: "0px",
-          startLeft: "0px",
-          endLeft: "-68px",
-          transition: "all 0.8s 0.6s",
+          startX: -610,
+          endX: -710,
+          startY: -190,
+          endY: -190,
+          transition: "all 0.4s 0.4s"
         }}
       />
       <FoodTab tabItem={tabItem} />
