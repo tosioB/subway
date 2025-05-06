@@ -5,7 +5,7 @@ export interface FoodItem {
   korName: string;
   engName: string;
   image: string;
-  description: string;
+  description?: string;
   label?: "SUBPICK" | "NEW" | "PARTY";
   baseRecipe?: string[];
   extraRecipe?: string[];
@@ -17,6 +17,7 @@ export interface FoodItem {
     sugar: { value: number; dailyPercent?: number };
     sodium: { value: number; dailyPercent?: number };
   }[];
+  calorie?: number;
   price15cm?: number;
   price30cm?: number;
   etc?: string;

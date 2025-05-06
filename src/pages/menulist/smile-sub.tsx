@@ -11,7 +11,12 @@ const tabItem: TabItem[] = [
 const SmileSub = () => {
   return (
     <div className="smile-sub-page menulist-page">
-      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
+      <SubHeader
+        category="메뉴소개"
+        basicColor="#FFF"
+        activeColor="#ffce32"
+        borderColor="rgba(229, 229, 229, 0.1)"
+      />
       <SubAnyBanner
         backgroundColor="#00A5DD"
         backgroundImage="/images/img_smile_sub_bg.jpg"

@@ -1,3 +1,4 @@
+import FreshIngredients from "@/pages/guide/fresh-ingredients";
 import { FoodItem } from "@/types/FoodItem";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -25,7 +26,7 @@ const FoodCard = ({ item, isVisible }: FoodCardProps) => {
         transform: show ? "scale(1)" : "scale(0.8)",
         opacity: show ? "1" : "0",
         transition: "opacity 0.3s ease, transform 0.3s ease",
-        cursor: item.detailPage ? "pointer" : "default",
+        cursor: item.detailPage ? "pointer" : "default"
       }}
     >
       <span
@@ -38,7 +39,7 @@ const FoodCard = ({ item, isVisible }: FoodCardProps) => {
               ? "#58006c"
               : item.label === "NEW"
               ? "#ffce32"
-              : "transparent", // 기본값
+              : "transparent" // 기본값
         }}
       >
         {item.label}
@@ -49,8 +50,15 @@ const FoodCard = ({ item, isVisible }: FoodCardProps) => {
       <div className="food-detail">
         <p className="kor-name">{item.korName}</p>
         <p className="eng-name">{item.engName}</p>
+        {item.calorie && <p className="calorie">{item.calorie} kcal</p>}
         <p className="description" style={{ whiteSpace: "pre-line" }}>
           {item.description}
+          {item.category === "fresh_ingredients" &&
+            item.subCategory === "bread" && (
+              <p className="extra-text">
+                ({item.korName}의 칼로리는 15cm 기준입니다.){" "}
+              </p>
+            )}
         </p>
         {item.detailPage ? <span className="more-icon"></span> : null}
       </div>

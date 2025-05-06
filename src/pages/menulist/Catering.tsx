@@ -1,7 +1,6 @@
 import FoodTab from "@/components/FoodTab";
 import SubAnyBanner from "@/components/SubAnyBanner";
 import SubHeader from "@/components/SubHeader";
-import SubImgBanner from "@/components/SubImgBanner";
 import { cateringData } from "@/data/cateringData";
 import { TabItem } from "@/types/TabItem";
 
@@ -23,7 +22,12 @@ const tabItem: TabItem[] = [
 const Catering = () => {
   return (
     <div className="catering-page">
-      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
+      <SubHeader
+        category="메뉴소개"
+        basicColor="#FFF"
+        activeColor="#ffce32"
+        borderColor="rgba(229, 229, 229, 0.1)"
+      />
       <SubAnyBanner
         backgroundColor="#fa8306"
         title="Catering Menu"

@@ -47,6 +47,10 @@
               color: $main-color-green;
               text-decoration: underline;
             }
+            &.active {
+              text-decoration: underline;
+              color: $main-color-green;
+            }
           }
         }
         &:hover {

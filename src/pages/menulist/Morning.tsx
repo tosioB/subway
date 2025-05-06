@@ -21,7 +21,12 @@ const tabItem: TabItem[] = [
 const Morning = () => {
   return (
     <div className="morning-page menulist-page">
-      <SubHeader category="메뉴소개" basicColor="#FFF" activeColor="#ffce32" />
+      <SubHeader
+        category="메뉴소개"
+        basicColor="#FFF"
+        activeColor="#ffce32"
+        borderColor="rgba(229, 229, 229, 0.1)"
+      />
       <SubAnyBanner
         backgroundColor="#f2b701"
         backgroundImage="/images/img_morning_bg.png"

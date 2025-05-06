@@ -9,6 +9,13 @@
   background-color: #f2f2f2;
 }
 
+.guide-page {
+  background-color: #fff;
+  &.fresh-ingredients-page {
+    background-color: #f2f2f2;
+  }
+}
+
 .container {
   width: $ui-width;
   margin: 0 auto;
@@ -219,6 +226,16 @@
         visibility: hidden;
         opacity: 0;
         z-index: 2;
+        .extra-text {
+          font-size: 13px;
+        }
+      }
+      .calorie {
+        margin-top: 12px;
+        font-family: "Subway-SixInch";
+        font-size: 18px;
+        font-weight: 700;
+        color: $sub-color-yellow;
       }
       .more-icon {
         position: absolute;
@@ -273,7 +290,7 @@
       }
       &::after {
         opacity: 1;
-        transition: opacity 0.4s ease-out;
+        transition: opacity 0.2s ease-out;
       }
     }
   }
@@ -296,9 +313,4 @@
     height: 9px;
     background: url("/images/arr_top_gray.png") no-repeat 50% 50% / 100%;
   }
-}
-
-.ds {
-  height: 3000px;
-  background-color: #9494b6;
 }

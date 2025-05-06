@@ -5,13 +5,17 @@ import "@/assets/font.scss";
 import Home from "@/pages/Home";
 import Header from "@/components/Header";
 import Footer from "./components/Footer";
+import FoodDetail from "./pages/FoodDetail";
 import Sandwich from "./pages/menulist/Sandwich";
 import Wrap from "./pages/menulist/Wrap";
 import Salad from "./pages/menulist/Salad";
 import Morning from "./pages/menulist/Morning";
-import SmileSub from "./pages/menulist/SmileSub";
+import SmileSub from "./pages/menulist/smile-sub";
 import Catering from "./pages/menulist/Catering";
-import FoodDetail from "./pages/FoodDetail";
+import AppGuide from "./pages/guide/app-guide";
+import SubwayGuide from "./pages/guide/subway-guide";
+import CateringGuide from "./pages/guide/catering-guide";
+import FreshIngredients from "./pages/guide/fresh-ingredients";
 
 function App() {
   return (
@@ -21,13 +25,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          {/* 메뉴리스트 */}
+          {/* 메뉴소개 */}
           <Route path="/sandwich" element={<Sandwich />} />
           <Route path="/wrap" element={<Wrap />} />
           <Route path="/salad" element={<Salad />} />
           <Route path="/morning" element={<Morning />} />
           <Route path="/smile_sub" element={<SmileSub />} />
           <Route path="/catering" element={<Catering />} />
+
+          {/* 이용방법 */}
+          <Route path="/subway_guide" element={<SubwayGuide />} />
+          <Route path="/catering_guide" element={<CateringGuide />} />
+          <Route path="/fresh_ingredients" element={<FreshIngredients />} />
+          <Route path="/app_guide" element={<AppGuide />} />
 
           {/* 메뉴 상세페이지 */}
           <Route path="/sandwich/food_detail" element={<FoodDetail />} />

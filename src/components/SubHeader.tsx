@@ -16,12 +16,14 @@ interface SubHeaderProps {
   category: SubHeaderCategory;
   basicColor?: string;
   activeColor?: string;
+  borderColor?: string;
 }
 
 const SubHeader = ({
   category,
   basicColor = "#999",
   activeColor = "#009223",
+  borderColor = "#e5e5e5"
 }: SubHeaderProps) => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,10 +58,8 @@ const SubHeader = ({
         backgroundColor: isScrolled
           ? "rgba(255,255,255,1)"
           : "rgba(255,255,255,0)",
-        borderColor: isScrolled
-          ? "rgba(229, 229, 229, 1)"
-          : "rgba(229, 229, 229, 0.1)",
-        transition: "background-color 0.3s",
+        borderColor: isScrolled ? "rgba(229, 229, 229, 1)" : borderColor,
+        transition: "background-color 0.3s"
       }}
     >
       <div className="container">
@@ -68,7 +68,7 @@ const SubHeader = ({
           height="60px"
           style={{
             visibility: isScrolled ? "visible" : "hidden",
-            opacity: isScrolled ? 1 : 0,
+            opacity: isScrolled ? 1 : 0
           }}
         />
         <ul className="dp2-list">
@@ -80,9 +80,7 @@ const SubHeader = ({
                   to={item.path}
                   style={{
                     color: isActive ? activeColor : computedBasicColor,
-                    borderBottom: isActive
-                      ? `4px solid ${activeColor}`
-                      : "none",
+                    borderBottom: isActive ? `4px solid ${activeColor}` : "none"
                   }}
                 >
                   {item.label}
@@ -94,7 +92,7 @@ const SubHeader = ({
         <TopBtn
           style={{
             visibility: isScrolled ? "visible" : "hidden",
-            opacity: isScrolled ? 1 : 0,
+            opacity: isScrolled ? 1 : 0
           }}
         />
       </div>
