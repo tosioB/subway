@@ -3,6 +3,7 @@ import SubAnyBanner from "@/components/SubAnyBanner";
 import SubHeader from "@/components/SubHeader";
 import { cateringData } from "@/data/cateringData";
 import { TabItem } from "@/types/TabItem";
+import "@/assets/menulist-page.scss";
 
 const tabItem: TabItem[] = [
   { id: 1, tabTitle: "All", content: () => cateringData },
@@ -21,7 +22,7 @@ const tabItem: TabItem[] = [
 
 const Catering = () => {
   return (
-    <div className="catering-page">
+    <div className="catering-page menulist-page">
       <SubHeader
         category="메뉴소개"
         basicColor="#FFF"

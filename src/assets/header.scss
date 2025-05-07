@@ -9,8 +9,8 @@
   max-height: $header-height;
   padding-bottom: 24px;
   background-color: #fff;
-  border-top: 5px solid;
-  border-color: $main-color-green;
+  border-top: 5px solid $main-color-green;
+  border-bottom: 1px solid #e2e2e2;
   overflow: hidden;
   transition: max-height 0.3s;
   z-index: 99;

@@ -3,6 +3,7 @@ import SubAnyBanner from "@/components/SubAnyBanner";
 import SubHeader from "@/components/SubHeader";
 import { wrapData } from "@/data/wrapData";
 import { TabItem } from "@/types/TabItem";
+import "@/assets/menulist-page.scss";
 
 const tabItem: TabItem[] = [
   { id: 1, tabTitle: "All", content: () => wrapData },

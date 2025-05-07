@@ -3,6 +3,7 @@ import SubAnyBanner from "@/components/SubAnyBanner";
 import SubHeader from "@/components/SubHeader";
 import { morningData } from "@/data/morningData";
 import { TabItem } from "@/types/TabItem";
+import "@/assets/menulist-page.scss";
 
 const tabItem: TabItem[] = [
   { id: 1, tabTitle: "All", content: () => morningData },

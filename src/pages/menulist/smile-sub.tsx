@@ -3,6 +3,7 @@ import SubAnyBanner from "@/components/SubAnyBanner";
 import SubHeader from "@/components/SubHeader";
 import { smileSubData } from "@/data/smileSubData";
 import { TabItem } from "@/types/TabItem";
+import "@/assets/menulist-page.scss";
 
 const tabItem: TabItem[] = [
   { id: 1, tabTitle: "스마일 썹", content: () => smileSubData }
