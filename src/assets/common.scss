@@ -340,6 +340,10 @@
   }
 }
 
+.com-swiper {
+  margin-top: 60px;
+}
+
 .swiper-nav {
   position: absolute;
   left: 50%;
@@ -397,10 +401,21 @@
     strong {
       font-size: 28px;
     }
+    &.active {
+      background-color: #fff;
+      border-color: $main-color-green;
+      color: $main-color-green;
+      strong {
+        color: $font-color-black;
+      }
+    }
     &.swiper-pagination-bullet-active {
       background-color: $main-color-green;
       border-color: $main-color-green;
       color: #fff;
+      strong {
+        color: #fff;
+      }
     }
     &:after {
       content: "";

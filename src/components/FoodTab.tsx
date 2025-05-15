@@ -14,9 +14,11 @@ interface FoodTabProps {
 
 const FoodTab = ({ tabItem }: FoodTabProps) => {
   const [activeTab, setActiveTab] = useState(tabItem[0]?.id || 1); // 항상 첫 탭으로 시작
+
   const [filteredData, setFilteredData] = useState(
     tabItem.find((tab) => tab.id === activeTab)?.content() || []
   );
+
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

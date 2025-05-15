@@ -1,6 +1,107 @@
+@use "./variables" as *;
+
 .guide-page {
   background-color: #f2f2f2;
   &.subway-guide-page {
+    .in-store-order {
+      height: 695px;
+      .in-store-order-step {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+        img {
+          display: block;
+          width: 700px;
+          height: 420px;
+        }
+        .step-exp {
+          width: 398px;
+          height: 418px;
+          padding: 42px 48px;
+          background-color: #fff;
+          border: 1px solid;
+          border-color: $border-color-gray;
+          position: relative;
+          .step-num {
+            font-family: "Subway-Footlong";
+            font-size: 18px;
+            font-weight: 700;
+            color: $main-color-green;
+          }
+          .title {
+            padding-bottom: 32px;
+            margin-top: 16px;
+            font-size: 28px;
+            font-weight: 300;
+            color: $font-color-black;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 40px;
+              height: 4px;
+              background-color: $sub-color-yellow;
+            }
+          }
+          .description {
+            margin-top: 14px;
+            line-height: 26px;
+            white-space: pre-line;
+            color: $font-color-gray;
+          }
+          .link-box {
+            position: absolute;
+            bottom: 42px;
+            left: 48px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 4px;
+              height: 40px;
+              padding: 0 12px;
+              font-weight: 700;
+              border: 2px solid;
+              border-color: #bbb;
+              border-radius: 20px;
+              color: #999;
+              &::after {
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: no-repeat 50% 50% / 16px;
+                background-image: url("/images/more_icon_gray.png");
+              }
+              &:hover {
+                background-color: #444;
+                border-color: #444;
+                color: $font-color-white;
+                &::after {
+                  background-image: url("/images/more_icon.svg");
+                }
+              }
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 79px;
+            width: 11px;
+            height: 21px;
+            background: url("images/icon_step_arr.png") no-repeat 50% 50%;
+          }
+        }
+      }
+    }
   }
   &.fresh-ingredients-page {
   }
