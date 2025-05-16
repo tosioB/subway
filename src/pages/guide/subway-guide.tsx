@@ -1,15 +1,15 @@
 import SubHeader from "@/components/SubHeader";
 import ComTab from "@/components/ComTab";
 import PageTitle from "@/components/PageTitle";
-import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "@/assets/common.scss";
 import "@/assets/guide-page.scss";
-import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
+import { useEffect, useRef, useState } from "react";
+import { Navigation, Pagination } from "swiper/modules";
 
-const ds = [
+const inStoreOrderStep = [
   {
     id: 1,
     images: "/images/in_store_order_01.png",
@@ -25,6 +25,7 @@ const ds = [
     id: 2,
     images: "/images/in_store_order_02.png",
     title: "빵 선택",
+    titleEtc: "(샐러드 선택 시 제외)",
     description:
       "매장에서 직접 구운 6가지 종류 중\n고객님이 원하는 빵으로\n추가비용 없이 선택 가능합니다.",
     btnList: [{ btnTitle: "빵 종류", btnUrl: "/fresh_ingredients" }]
@@ -95,37 +96,59 @@ const InStoreOrder = () => {
           }
         }}
         modules={[Navigation, Pagination]}
-        className="com-swiper"
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {ds.map((item) => {
-          return (
-            <SwiperSlide key={item.id}>
-              <div className="in-store-order-step">
-                <img src={item.images} alt={item.title} />
-                <div className="step-exp">
-                  <p className="step-num">STEP {item.id}</p>
-                  <p className="title">{item.title}</p>
-                  <p className="description">{item.description}</p>
-                  <div className="link-box">
-                    {item.btnList.map((btn) => {
-                      return <Link to={btn.btnUrl}>{btn.btnTitle}</Link>;
-                    })}
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-        <div className="swiper-nav">
-          <button type="button" className="swiper-prev">
-            이전
-          </button>
-          <button type="button" className="swiper-next">
-            다음
-          </button>
-        </div>
+        {inStoreOrderStep.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className="img-box">
+              <img src={item.images} alt={`STEP ${item.id}`} />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
+
+      <div className="content-slide-wrapper">
+        {inStoreOrderStep.map((item, idx) => (
+          <div
+            key={item.id}
+            className={`content-slide ${
+              idx === activeIndex ? "active" : "hidden"
+            }`}
+          >
+            <div className="step-exp">
+              <p className="step-num">STEP {item.id}</p>
+              <p className="title">
+                {item.title}
+                {item.titleEtc && <span>{item.titleEtc}</span>}
+              </p>
+              <p className="description">
+                {item.description.split("\n").map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </p>
+              <div className="link-box">
+                {item.btnList.map((btn, i) => (
+                  <Link to={btn.btnUrl} key={i}>
+                    {btn.btnTitle}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="swiper-nav">
+        <button type="button" className="swiper-prev">
+          이전
+        </button>
+        <button type="button" className="swiper-next">
+          다음
+        </button>
+      </div>
     </div>
   );
 };

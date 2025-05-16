@@ -27,10 +27,11 @@
 }
 
 .com-tab {
+  margin-top: -34px;
   .tab-btn-wrap {
     display: flex;
     width: $ui-width;
-    margin: -34px auto 0;
+    margin: 0 auto;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     button {
       flex: 1;
@@ -48,7 +49,7 @@
     }
   }
   .tab-con-wrap {
-    padding-top: 26px;
+    padding-top: 40px;
   }
 }
 
@@ -407,6 +408,9 @@
       color: $main-color-green;
       strong {
         color: $font-color-black;
+      }
+      &::after {
+        background-position: 50% 100%;
       }
     }
     &.swiper-pagination-bullet-active {
